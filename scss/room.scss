@@ -1,0 +1,66 @@
+.app-room .list-first {
+  margin-top:10px !important;
+  position: relative;
+}
+.app-room .list-first .button,
+.app-room .list-last .button {
+  position: absolute;
+  right:5px;
+  top:0;
+  z-index:999;
+}
+.app-room .list {
+  background:none !important;
+  border-radius: 0px !important;
+}
+.app-room .item-profile {
+  background:rgba(255,255,255,1.0) !important;
+}
+.list.comment {
+  background:rgba(255,255,255,1.0) !important;
+}
+.comment .item {
+  background:none !important;
+  border:0 !important;
+}
+.comment .item.tabs {
+  border-top:1px solid #EEE !important;
+  border-bottom:1px solid #EEE !important;
+}
+.item-profile img {
+  width:30px;
+  height:30px;
+  border-radius:15px;
+  position: relative;
+  left:-10px;
+}
+.item-body > p:first-child {
+  margin-top:0 !important;
+  font-size:16px;
+}
+.comment .tab-item {
+  font-size:14px !important;
+}
+.comment .tab-item .icon {
+  margin-left:10px;
+}
+.replies .comment {
+  margin:0 !important;
+  background:#f2f4f6 !important;
+  border-bottom:1px solid #eee !important;
+}
+.reply-list {
+  margin:0 !important;
+}
+.replies .subdued .icon {
+  margin-left:8px !important;
+}
+.spinned {
+  padding:40px 0;
+}
+.spinned svg {
+  width: 28px;
+  height: 28px;
+  stroke: #FFF;
+  fill: #FFF;
+}

@@ -1,0 +1,47 @@
+.login .logos { 
+  width:100%; 
+  position: absolute; 
+  top:20%;
+  }
+.login img.logo { 
+  display:block; 
+  margin-right:auto; 
+  margin-left:auto; 
+  width:38%;
+}
+.login img.text { 
+  display:block; 
+  margin-right:auto; 
+  margin-left:auto; 
+  width:50%; 
+  margin-top:6%; 
+}
+.login .login-form { 
+  position: absolute; 
+  bottom:12%; 
+  width:100%; 
+  text-align: center;
+}
+.login .login-form button { 
+  margin-right:auto; 
+  margin-left:auto; 
+  margin-top:20px;
+}
+.login .data { 
+  height:300px;
+  color:#FFF; 
+  position: absolute; 
+  bottom:0;
+}
+.login .item-input { 
+  padding:7px 0 4px 16px;
+}
+.login .placeholder-icon:first-child {
+  padding-right: 15px; 
+  position: relative; 
+  top:-1px;
+}
+.login .button { 
+  color:#FFF !important; 
+  border-color:#FFF !important;
+}

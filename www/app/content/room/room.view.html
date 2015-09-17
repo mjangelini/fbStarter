@@ -1,0 +1,89 @@
+<ion-view class="app-pane" view-title="Room">
+  
+  <ion-header-bar class="app-header">
+    <div class="buttons">
+      <button menu-toggle="left" class="button button-icon ion-navicon"></button>
+    </div>
+    <h1 class="title">
+      <span ng-if="loaded != 5">Loading...</span>
+      <span ng-if="loaded == 5">{{room.name}}</span>
+    </h1>
+    <div class="buttons">
+      <button ng-click="logout()" class="button button-icon ion-log-out"></button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content scroll="true" class="app-content app-room">
+
+    <div ng-if="loaded != 5" class="spinned align-center">
+      <ion-spinner class="spinner"></ion-spinner>
+    </div>
+
+    <!-- Content -->
+    <div ng-if="loaded == 5">
+
+      <!-- Post Comment -->
+      <div class="list list-inset list-first">
+        <label class="item item-input item-profile">
+          <img ng-src="{{user.information.image_lg}}">
+          <input type="text" ng-model="newcomment" placeholder="Add Comment...">
+        </label>
+        <button ng-click="addComment(newcomment)" class="button button-positive button-clear">
+          Post
+        </button>
+      </div>
+
+      <!-- List of Comments -->
+      <div ng-repeat="comment in comments | orderBy:'time':true" class="comment list card">
+
+        <div class="item item-avatar">
+          <img ng-src="{{comment.avatar}}">
+          <h2>{{comment.name}}</h2>
+          <p>{{tstamp() | prettyDate:comment.time}}</p>
+        </div>
+
+        <div class="item item-body">
+          <p>{{comment.message}}</p>
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" ng-click="addCommentLike(comment.$id)" ng-class="{'positive': commentlikes[comment.$id][user.auth.uid]}">
+            {{commentlikes[comment.$id] | likecount}}<i class="icon ion-thumbsup"></i>
+          </a>
+          <a class="tab-item" ng-click="replyshow[comment.$id] = !replyshow[comment.$id]">
+            {{replies[comment.$id] | commentcount}}<i class="icon ion-ios-chatbubble"></i>
+          </a>
+        </div>
+
+        <!-- List of Replies -->
+        <div class="replies" ng-show="replyshow[comment.$id]">
+          <div ng-repeat="(key,reply) in replies[comment.$id]" class="comment list card">
+            <div class="item item-avatar">
+              <img ng-src="{{reply.avatar}}">
+              <h2>{{reply.name}}</h2>
+              <p>{{tstamp() | prettyDate:reply.time}}</p>
+            </div>
+            <div class="item item-body">
+              <p>{{reply.message}}</p>
+              <p>
+                <a class="subdued" ng-click="addReplyLike(comment.$id, key)" ng-class="{'positive': replylikes[comment.$id][key][user.auth.uid]}">{{replylikes[comment.$id][key] | count}}<i class="icon ion-thumbsup"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="list list-inset list-last reply-list">
+            <label class="item item-input item-profile">
+              <img ng-src="{{user.information.image_lg}}">
+              <input type="text" ng-model="newreply[comment.$id]" placeholder="Add Reply...">
+            </label>
+            <button ng-click="addReply(newreply[comment.$id], comment.$id)" class="button button-positive button-clear">
+              Reply
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </ion-content>
+  
+</ion-view>

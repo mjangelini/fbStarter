@@ -1,0 +1,68 @@
+
+/* INVVENTORY THEMES */
+$invBlue: #34495E;
+$invLight: #EAECEE;
+$invGreen: #4DAF7C;
+$invRed: #D24D57;
+$invGrey: #959799;
+$invBluer: #59ABE3;
+
+/* BASE CSS */
+html, body { 
+  font-family:'Source Sans Pro', Helvetica, Arial, sans-serif; 
+}
+html, body {
+  font-size:14px; 
+}
+
+/* COLORS */
+.green {
+  color: $invGreen;
+}
+
+.grey {
+  color: $invGrey;
+}
+.blue {
+  color: $invBluer;
+}
+.red {
+  color: $invRed;
+}
+.bg-start { 
+  background:$invBlue;
+}
+.app-header {
+  background: url(../../img/header.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background:none !important;
+}
+.app-header h1, .app-header .button {
+  color:#FFF;
+}
+.app-header .button-icon:before {
+  font-size:24px !important; 
+}
+/*
+
+INVENTORY
+ - CATEGORIES
+ - ITEMS w PRICES, STATUS, ETC
+*/
+.app-pane {
+  background: url(../../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.app-pane-income {
+  background: url(../../img/bg-income.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

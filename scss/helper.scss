@@ -1,0 +1,41 @@
+.align-center {
+  text-align:center !important;
+}
+.text-white { 
+  color:#FFF !important;
+}
+.no-margin {
+  margin:0 !important;
+}
+.row-pad {
+  padding:10px 0 0 0;
+}
+.icon-left {
+  margin-left:10px;
+}
+.tbl {
+  display:table;
+  content:'';
+  clear:both;
+  width:100%;
+}
+.tbl-cell {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.width-50 {
+  width:50% !important;
+}
+.full-pane {
+  position: fixed !important;
+  margin-top:10% !important;
+  width:100% !important;
+  padding:0 50px !important;
+  font-size:16px !important;
+  color:rgba(255,255,255,0.8) !important;
+  text-align:center !important;
+}
+.item-icon-left .icon {
+  font-size:20px;
+}
