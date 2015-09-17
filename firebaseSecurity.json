@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "comments": {
+      ".read": "auth !== null",
+      ".write": "auth !== null"
+    },
+    "likes": {
+      ".read": "auth !== null",
+      ".write": "auth !== null",
+      "comments" : {
+        "$room_id": {
+          "$comment_id": {
+            ".validate" : "root.child('comments/'+$room_id+'/'+$comment_id+'/id').val() !== auth.uid"
+          }
+        }
+      },
+      "replies" : {
+        "$room_id": {
+          "$comment_id": {
+            "$reply_id" : {
+              ".validate" : "root.child('replies/'+$room_id+'/'+$comment_id+'/'+$reply_id+'/id').val() !== auth.uid"
+            }
+          }
+        }
+      }
+    },
+    "replies": {
+      ".read": "auth !== null",
+      ".write": "auth !== null"
+    },
+    "rooms": {
+      ".read": "auth !== null",
+      ".write": "auth !== null"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "comments" : {
+    "-JzLzm44iKIsaCUIc6Mb" : {
+      "-JzMqG8ulEitgcEM0Kk3" : {
+        "avatar" : "https://pbs.twimg.com/profile_images/378800000699379648/093b594f9af99a98fdee1df605a6236f_bigger.png",
+        "id" : "twitter:37589666",
+        "message" : "Welcome to the General chat room!",
+        "name" : "projectfinale",
+        "time" : 1442435371710
+      },
+      "-JzMqiI6mdxn1WAR-_Qm" : {
+        "avatar" : "https://pbs.twimg.com/profile_images/633669033708142592/jtJpbgKj_400x400.jpg",
+        "id" : "fake:11111111",
+        "message" : "Glad to be here!",
+        "name" : "Trevor Noah",
+        "time" : 1442435491241
+      },
+      "-JzN1ZuiK95R8HocqOZz" : {
+        "avatar" : "https://graph.facebook.com/1992222731270/picture?width=73&height=73",
+        "id" : "facebook:1992222731270",
+        "message" : "Hello Everyone!",
+        "name" : "Matthew Angelini",
+        "time" : 1442438598459
+      }
+    }
+  },
+  "likes" : {
+    "comments" : {
+      "-JzLzm44iKIsaCUIc6Mb" : {
+        "-JzMqiI6mdxn1WAR-_Qm" : {
+          "facebook:1992222731270" : true,
+          "twitter:37589666" : true
+        }
+      }
+    },
+    "replies" : {
+      "-JzLzm44iKIsaCUIc6Mb" : {
+        "-JzMqG8ulEitgcEM0Kk3" : {
+          "-JzMqHhaDc1oG5IxZS1g" : {
+            "twitter:37589666" : true
+          }
+        },
+        "-JzMqiI6mdxn1WAR-_Qm" : {
+          "-JzMrMryxgf8JZ5oJLPZ" : {
+            "facebook:1992222731270" : true
+          }
+        }
+      }
+    }
+  },
+  "replies" : {
+    "-JzLzm44iKIsaCUIc6Mb" : {
+      "-JzMqG8ulEitgcEM0Kk3" : {
+        "-JzMqHhaDc1oG5IxZS1g" : {
+          "avatar" : "https://pbs.twimg.com/profile_images/633669033708142592/jtJpbgKj_400x400.jpg",
+          "id" : "fake:111111",
+          "message" : "Thanks for having me!",
+          "name" : "Trevor Noah",
+          "time" : 1442435378111
+        }
+      },
+      "-JzMqiI6mdxn1WAR-_Qm" : {
+        "-JzMrMryxgf8JZ5oJLPZ" : {
+          "avatar" : "https://pbs.twimg.com/profile_images/378800000699379648/093b594f9af99a98fdee1df605a6236f_bigger.png",
+          "id" : "twitter:37589666",
+          "message" : "Welcome!!!",
+          "name" : "projectfinale",
+          "time" : 1442435661584
+        }
+      }
+    }
+  },
+  "rooms" : {
+    "-JzLzm44iKIsaCUIc6Mb" : {
+      "name" : "General"
+    },
+    "-JzLzm46_xlJomI5KuNQ" : {
+      "name" : "Developers"
+    },
+    "-JzLzm47-ZKXtdXEzrbw" : {
+      "name" : "Designers"
+    },
+    "-JzLzm48BMoc4bg1F1Wf" : {
+      "name" : "Business"
+    }
+  }
+}

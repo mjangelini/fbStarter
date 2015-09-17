@@ -27,3 +27,11 @@ Run `ionic serve` to view and work with the application locally.
 1. `ionic build ios` - Build iOS App
 1. `ionic emulate ios` - Run iOS App in iOS Emulator
 
+## Firebase Data & Security
+If you would like to setup your own Firebase for testing, the files are included
+
+### Firebase Data
+* `firebaseData.json`
+
+### Firebase Security
+* `firebaseSecurity.json`
